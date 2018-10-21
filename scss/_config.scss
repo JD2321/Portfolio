@@ -1,7 +1,7 @@
-$primary-color: #022140;
-$secondary-color: #eece1a; 
+$primary-color: #353535;
+$secondary-color: #1E4258; 
 $show-home-image: true;
-$home-image: url(../img/church-on-sunday.svg);
+$home-image: url(../img/subtleOne.png);
 $background-opacity: 0.9;
 
 
@@ -28,5 +28,31 @@ $background-opacity: 0.9;
             }
         }
     
+    }
+}
+
+//media query mixins
+
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (min-width: 768px) and  (max-width: 1170px) {
+        @content;
+    }
+}
+
+@mixin mediaXl {
+    @media screen and (min-width: 1171px) {
+        @content;
     }
 }
