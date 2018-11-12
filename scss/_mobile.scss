@@ -49,6 +49,19 @@
             width: 150px;
         }
     }
+
+    .about-info {
+        grid-template-areas: 
+        'heading'
+        'sub-heading'
+        'bio'
+        'jobone'
+        'jobtwo'
+        'jobthree';
+
+        grid-template-columns: 1fr;
+
+    }
 }
 
 // smartphones
