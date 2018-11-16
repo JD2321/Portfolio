@@ -7,8 +7,7 @@
 }
 
 body {
-    @include background;
-    background: $primary-color;
+    @include background($primary-color);
     color: set-text-color($primary-color);
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,20 +15,34 @@ body {
 
 }
 
+
+
 //headings
 
 h1, h2, h3{
     margin: 0;
     font-weight: 400;
 
+    
+
     &.lg-heading {
-        font-size: 6rem
+        font-size: 6rem;
+        
+        
     }
 
     &.sm-heading {
         font-size: 2rem;
-        padding: 0.2rem 1rem;
-        // background: rgba(lighten($primary-color, 2), 0.5);
+        padding-top: 1rem;
+    }
+
+    span{
+        
+        &.heading-text{
+            border-bottom: 3px solid currentColor;
+            display: inline-block;
+            line-height: 0.90;
+        }
     }
 }
 
@@ -79,19 +92,14 @@ main {
 //about page css
 
 .about-info {
-    display:grid;
-    grid-gap: 30px;
-    grid-template-areas: 
-    'bio bio bio'
-    'jobone jobtwo jobthree';
-    grid-template-columns: repeat(3, 1fr);
-    
-    .bio-img {
-        grid-area: bioimg;
-        margin: auto;
-        border-radius: 50%;
-        border: $secondary-color 3px solid
-    }
+    // display:grid;
+    // grid-gap: 30px;
+    // grid-template-areas: 
+    // 'bioimg bio bio';
+
+    // // 'jobone jobtwo jobthree';;
+    // grid-template-columns: 1fr;
+
 
     .lg-heading {
         grid-area: heading;
@@ -100,30 +108,49 @@ main {
     .sm-heading {
         grid-area:subheading;
     }
-    
-    .bio {
-        grid-area: bio;
-        font-size: 1.5rem;
+
+    .bio{
+
+        .bio-img {
+            grid-area: bioimg;
+            margin: auto;
+            height: 200px;
+            width:200px;
+            border: $secondary-color 3px solid;
+            border-radius: 50%;
+            margin-right:30px; 
+            float: left;
+        }
+
+        .bio-text {
+            font-size: 1.5rem;
+            padding: 15px;   
+        }
+
     }
+
     
-    .job-one {
-        grid-area: jobone
-    }
     
-    .job-two {
-        grid-area: jobtwo
-    }
     
-    .job-three {
-        grid-area: jobthree
-    }
     
-    .job {
-        background:lighten($primary-color, 5);
-        padding: 0.5rem;
-        border-bottom: $secondary-color 5px solid;
+//     .job-one {
+//         grid-area: jobone
+//     }
     
-    }
+//     .job-two {
+//         grid-area: jobtwo
+//     }
+    
+//     .job-three {
+//         grid-area: jobthree
+//     }
+    
+//     .job {
+//         background:lighten($primary-color, 5);
+//         padding: 0.5rem;
+//         border-bottom: $secondary-color 5px solid;
+    
+//     }
 
 
 }

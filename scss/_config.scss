@@ -1,15 +1,29 @@
-$primary-color: #353535;
-$secondary-color: #1E4258; 
+ 
+// Green: #687864
+// Blue: #71208E
+// Light blue: #5085A5
+// Lightest blue #8FC1E3
+// White: #F7F9FB
+
+
+$primary-color: #31708E;
+$secondary-color: #8FC1E3; 
+$color-three: #2D5F53;
+$color-four: #5085A5;
+$white: #F7F9FB;
+$purple: #494B58;
+$grey: #2F4454;
 $show-home-image: true;
 $home-image: url(../img/subtleOne.png);
 $background-opacity: 0.9;
+$color: #31708E;
 
 
 @mixin easeOut {
     transition: all 0.8s ease-out;
 }
 
-@mixin background {
+@mixin background($color) {
     @if $show-home-image {
         &#bg-img {
             background: $home-image;
@@ -23,7 +37,7 @@ $background-opacity: 0.9;
                 right: 0;
                 width: 100%;
                 height:100%;
-                background: rgba($primary-color, $background-opacity);
+                background: rgba($color, $background-opacity);
                 z-index: -1;
             }
         }

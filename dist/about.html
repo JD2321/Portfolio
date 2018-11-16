@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>About</title>
 </head>
-<body id="">
+<body id="bg-img">
     <div class="overlay"></div>
     <header>
         <div class="menu-btn">
@@ -18,32 +18,42 @@
         </div>
 
         <nav class="menu">
-            <div class="menu-branding">
-                <div class="portrait"></div>
-            </div>
-            <ul class="menu-nav">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item current">
-                    <a href="about.html" class="nav-link">
-                        About Me
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="work.html" class="nav-link">
-                        My Work
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">
-                        How To Reach Me
-                    </a>
-                </li>
-            </ul>
-        </nav>
+                <div class="menu-branding" id="bg-img">
+                    <div class="outer-ring-three">
+                        <div class="outer-ring-two">
+                            <div class="outer-ring">
+                                <div class="middle-ring">
+                                    <div class="portrait">
+                                        <i class="fas fa-laptop-code fa-7x" id="branding-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <ul class="menu-nav" id="bg-img">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item current">
+                        <a href="about.html" class="nav-link">
+                            About Me
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="work.html" class="nav-link">
+                            My Work
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            How To Reach Me
+                        </a>
+                    </li>
+                </ul>
+            </nav>
     </header>
 
     <main id="about">
@@ -54,11 +64,12 @@
             <!-- <img src="img/self.png" alt="Jordan Diaz" class="bio-img"> -->
 
             <div class="bio">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti necessitatibus consequatur ratione mollitia praesentium tempora. In itaque consequatur ipsam facilis, odio earum et illo id tempore aspernatur sed quos. Ex quas ullam dolores sit optio.
-                </p>
+                    <img class="bio-img" src="../dist/img/self.png" alt="">
+                    <div class="bio-text"> Hi I'm Jordan! I am a Central Florida native with a passion for code, creating and problem solving. While my coding journey started relatively recently I've had the opportunity to complete a full-stack bootcamp progam where I not only got to learn the fundamentals of html, css and javascript but I was also introduced to a slew of front and backend technologies and concepts that we were then able to use to build a small libarary of tools, games and projects. 
+                </div>
             </div>
 
-            <div class="job job-one">
+            <!-- <div class="job job-one">
                 <h3>First Job</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, optio fuga ad illum nobis sed qui beatae voluptas quidem consectetur!</p>
             </div>
@@ -69,7 +80,7 @@
             <div class="job job-three">
                 <h3>Third Job</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, optio fuga ad illum nobis sed qui beatae voluptas quidem consectetur!</p>
-            </div>
+            </div> -->
         </div>
     </main>
 
