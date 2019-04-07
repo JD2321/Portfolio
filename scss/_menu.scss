@@ -69,7 +69,7 @@
         margin: 0;
         padding: 0;
         // background: darken($primary-color, 5);
-        @include background(darken($primary-color, 5));
+        @include background(darken($primary-color, 16));
         list-style: none;
         transform: translate3d(0, -100%, 0);
         @include easeOut;
